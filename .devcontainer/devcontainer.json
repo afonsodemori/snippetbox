@@ -1,0 +1,32 @@
+{
+  "name": "snippetbox",
+  "dockerComposeFile": "compose.yml",
+  "service": "app",
+  "workspaceFolder": "/snippetbox",
+
+  "mounts": [
+    // cli
+    "source=${localEnv:HOME}/.fns-cli,target=/home/vscode/.fns-cli,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.bash_history,target=/home/vscode/.bash_history,type=bind,consistency=cached",
+    // devtools
+    "source=${localEnv:HOME}/.claude.json,target=/home/vscode/.claude.json,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind,consistency=cached",
+    // source code
+    "source=${localWorkspaceFolder},target=/snippetbox,type=bind,consistency=cached"
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
+        "mkhl.shfmt",
+        "eamodio.gitlens",
+        "Anthropic.claude-code"
+      ]
+    }
+  },
+
+  "postCreateCommand": "bash .devcontainer/install.sh"
+}
