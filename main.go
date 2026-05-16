@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"net/http"
 	"strconv"
@@ -18,8 +19,11 @@ func snippetView(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	msg := fmt.Sprintf("Display a specific snippet with ID %d", id)
-	w.Write([]byte(msg))
+	fmt.Fprintf(w, "Display a specific snippet with ID %d", id)
+
+	// Test
+	io.WriteString(w, " - WriteString")
+	fmt.Fprint(w, " - Fprint")
 }
 
 func snippetCreate(w http.ResponseWriter, r *http.Request) {
@@ -27,7 +31,21 @@ func snippetCreate(w http.ResponseWriter, r *http.Request) {
 }
 
 func snippetCreatePost(w http.ResponseWriter, r *http.Request) {
+	w.Header().Add("Server", "Go")
+	w.Header().Set("X-Website", "afonso.dev")
+	w.Header().Add("X-Website", "afonsodemori.com")
+	// w.WriteHeader(201)
+	w.WriteHeader(http.StatusCreated)
 	w.Write([]byte("TODO: Save a new snippet"))
+
+	// Test
+	headers := w.Header()
+
+	for key, values := range headers {
+		for _, value := range values {
+			fmt.Printf("%s: %s\n", key, value)
+		}
+	}
 }
 
 func main() {
