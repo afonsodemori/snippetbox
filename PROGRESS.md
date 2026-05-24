@@ -16,11 +16,11 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Serving static files - [529f25c]
    - [x] The http.Handler interface
 3. Configuration and error handling
-   - [ ] Managing configuration settings
-   - [ ] Structured logging
-   - [ ] Dependency injection
-   - [ ] Centralized error handling
-   - [ ] Isolating the application routes
+   - [x] Managing configuration settings - [4e77db3]
+   - [x] Structured logging - [44ae9c6]
+   - [x] Dependency injection - [b5ccf9b]
+   - [x] Centralized error handling - [a2d62b4]
+   - [x] Isolating the application routes - [ea101e2]
 4. Database-driven responses
    - [ ] Setting up MySQL
    - [ ] Installing a database driver
@@ -105,3 +105,8 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [c6fddaa]: https://github.com/afonsodemori/snippetbox/commit/c6fddaa95ef63a46d876a747d4af28e80dc0ad32
 [c86c743]: https://github.com/afonsodemori/snippetbox/commit/c86c74357beb2a8da8cf7801a84fdb4cf3c42214
 [529f25c]: https://github.com/afonsodemori/snippetbox/commit/529f25cf65660a9784c26cd583bc082d27cb2fc4
+[4e77db3]: https://github.com/afonsodemori/snippetbox/commit/4e77db32e2969d416c9ad70633354af3d7b2c2b7
+[44ae9c6]: https://github.com/afonsodemori/snippetbox/commit/44ae9c6a1c79634b183a0712051f8bae15f6c982
+[b5ccf9b]: https://github.com/afonsodemori/snippetbox/commit/b5ccf9b83065f408c53943ff1bd9c9432d2f7e1d
+[a2d62b4]: https://github.com/afonsodemori/snippetbox/commit/a2d62b4d35d2f97ec67604dff356a7b8d75ff108
+[ea101e2]: https://github.com/afonsodemori/snippetbox/commit/ea101e2a98f84d25da91bc75695e30186e0d8852
