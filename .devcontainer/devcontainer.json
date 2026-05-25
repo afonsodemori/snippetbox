@@ -23,7 +23,8 @@
         "esbenp.prettier-vscode",
         "mkhl.shfmt",
         "eamodio.gitlens",
-        "Anthropic.claude-code"
+        "Anthropic.claude-code",
+        "cweijan.vscode-mysql-client2"
       ]
     }
   },

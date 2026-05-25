@@ -2,3 +2,17 @@ services:
   app:
     image: ghcr.io/afonsodemori/devcontainers/golang:1.26-20260416-064128
     command: sleep infinity
+
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      MYSQL_DATABASE: db
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./init-db.sql:/docker-entrypoint-initdb.d/01-init-db.sql
+
+volumes:
+  mysql-data:
