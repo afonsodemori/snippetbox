@@ -3,7 +3,7 @@
 Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Completed sections link directly to the corresponding commit implementation.
 
 1. Introduction
-   - [x] Prerequisites
+   - [x] Prerequisites - <small>`theory`</small>
 2. Foundations
    - [x] Project setup and creating a module - [4f4de3b]
    - [x] Web application basics - [b25622a]
@@ -14,7 +14,7 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Project structure and organization - [c6fddaa]
    - [x] HTML templating and inheritance - [c86c743]
    - [x] Serving static files - [529f25c]
-   - [x] The http.Handler interface
+   - [x] The http.Handler interface - <small>`theory`</small>
 3. Configuration and error handling
    - [x] Managing configuration settings - [4e77db3]
    - [x] Structured logging - [44ae9c6]
@@ -22,15 +22,15 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Centralized error handling - [a2d62b4]
    - [x] Isolating the application routes - [ea101e2]
 4. Database-driven responses
-   - [ ] Setting up MySQL
-   - [ ] Installing a database driver
-   - [ ] Modules and reproducible builds
-   - [ ] Creating a database connection pool
-   - [ ] Designing a database model
-   - [ ] Executing SQL statements
-   - [ ] Single-record SQL queries
-   - [ ] Multiple-record SQL queries
-   - [ ] Transactions and other details
+   - [x] Setting up MySQL - [9da4a68]
+   - [x] Installing a database driver - [979bd20]
+   - [x] Modules and reproducible builds - <small>`theory`</small>
+   - [x] Creating a database connection pool - [9283730]
+   - [x] Designing a database model - [dcf2794]
+   - [x] Executing SQL statements - [48dd337]
+   - [x] Single-record SQL queries - [c6b92c9]
+   - [x] Multiple-record SQL queries - [6279e08]
+   - [x] Transactions and other details - <small>`theory`</small>
 5. Dynamic HTML templates
    - [ ] Displaying dynamic data
    - [ ] Template actions and functions
@@ -110,3 +110,10 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [b5ccf9b]: https://github.com/afonsodemori/snippetbox/commit/b5ccf9b83065f408c53943ff1bd9c9432d2f7e1d
 [a2d62b4]: https://github.com/afonsodemori/snippetbox/commit/a2d62b4d35d2f97ec67604dff356a7b8d75ff108
 [ea101e2]: https://github.com/afonsodemori/snippetbox/commit/ea101e2a98f84d25da91bc75695e30186e0d8852
+[9da4a68]: https://github.com/afonsodemori/snippetbox/commit/9da4a683333f281f4f803490eb4c491d12f8cb76
+[979bd20]: https://github.com/afonsodemori/snippetbox/commit/979bd20d8531ff363ddec4029cd02fc644214d43
+[9283730]: https://github.com/afonsodemori/snippetbox/commit/9283730be7e13be73ef5ccec3c1b21e317b82c49
+[dcf2794]: https://github.com/afonsodemori/snippetbox/commit/dcf2794a99ff6da35eeac26b9dd40e650ee3944a
+[48dd337]: https://github.com/afonsodemori/snippetbox/commit/48dd337eaac29f7f285f5b0e036c4f17a0c92cb8
+[c6b92c9]: https://github.com/afonsodemori/snippetbox/commit/c6b92c9bee3fecd1a738648b744187da2392e818
+[6279e08]: https://github.com/afonsodemori/snippetbox/commit/6279e083a59a2dfcb9b282c17b88a17c4fb8876a
