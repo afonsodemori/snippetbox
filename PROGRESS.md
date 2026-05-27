@@ -32,12 +32,12 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Multiple-record SQL queries - [6279e08]
    - [x] Transactions and other details - <small>`theory`</small>
 5. Dynamic HTML templates
-   - [ ] Displaying dynamic data
-   - [ ] Template actions and functions
-   - [ ] Caching templates
-   - [ ] Catching runtime errors
-   - [ ] Common dynamic data
-   - [ ] Custom template functions
+   - [x] Displaying dynamic data - [74a8fc1]
+   - [x] Template actions and functions - [7c3dd38]
+   - [x] Caching templates - [38dde2b]
+   - [x] Catching runtime errors - [8137361]
+   - [x] Common dynamic data - [a8641ec]
+   - [x] Custom template functions - [c2816a3]
 6. Middleware
    - [ ] How middleware works
    - [ ] Setting common headers
@@ -117,3 +117,9 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [48dd337]: https://github.com/afonsodemori/snippetbox/commit/48dd337eaac29f7f285f5b0e036c4f17a0c92cb8
 [c6b92c9]: https://github.com/afonsodemori/snippetbox/commit/c6b92c9bee3fecd1a738648b744187da2392e818
 [6279e08]: https://github.com/afonsodemori/snippetbox/commit/6279e083a59a2dfcb9b282c17b88a17c4fb8876a
+[74a8fc1]: https://github.com/afonsodemori/snippetbox/commit/74a8fc1706f34cbc591d0f25f3a043ea926d29f2
+[7c3dd38]: https://github.com/afonsodemori/snippetbox/commit/7c3dd38027eaca29fa516ea8e401fdf8ff6da272
+[38dde2b]: https://github.com/afonsodemori/snippetbox/commit/38dde2bda04410bc4e2d8ae2e8590248af50e62e
+[8137361]: https://github.com/afonsodemori/snippetbox/commit/8137361c80e65cf226d2e3c02025e4dfd14b3d42
+[a8641ec]: https://github.com/afonsodemori/snippetbox/commit/a8641ecbdc31d2487e9f85072d03ff72ad0b008a
+[c2816a3]: https://github.com/afonsodemori/snippetbox/commit/c2816a3c7cd5dd71d9692839c7dc223c832ba654
