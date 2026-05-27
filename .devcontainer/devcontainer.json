@@ -24,7 +24,8 @@
         "mkhl.shfmt",
         "eamodio.gitlens",
         "Anthropic.claude-code",
-        "cweijan.vscode-mysql-client2"
+        "cweijan.vscode-mysql-client2",
+        "gohugoio.gotmplfmt"
       ]
     }
   },
