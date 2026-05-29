@@ -39,11 +39,11 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Common dynamic data - [a8641ec]
    - [x] Custom template functions - [c2816a3]
 6. Middleware
-   - [ ] How middleware works
-   - [ ] Setting common headers
-   - [ ] Request logging
-   - [ ] Panic recovery
-   - [ ] Composable middleware chains
+   - [x] How middleware works - <small>`theory`</small>
+   - [x] Setting common headers - [2111b3f]
+   - [x] Request logging - [a347b03]
+   - [x] Panic recovery - [9ac90fe]
+   - [x] Composable middleware chains - [04ded9b]
 7. Processing forms
    - [ ] Setting up an HTML form
    - [ ] Parsing form data
@@ -123,3 +123,7 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [8137361]: https://github.com/afonsodemori/snippetbox/commit/8137361c80e65cf226d2e3c02025e4dfd14b3d42
 [a8641ec]: https://github.com/afonsodemori/snippetbox/commit/a8641ecbdc31d2487e9f85072d03ff72ad0b008a
 [c2816a3]: https://github.com/afonsodemori/snippetbox/commit/c2816a3c7cd5dd71d9692839c7dc223c832ba654
+[2111b3f]: https://github.com/afonsodemori/snippetbox/commit/2111b3f90d98d9e65130dacdc9d4539c2a6e4d65
+[a347b03]: https://github.com/afonsodemori/snippetbox/commit/a347b03442e48a6ca65dbee038b961392f930505
+[9ac90fe]: https://github.com/afonsodemori/snippetbox/commit/9ac90feffb63e434e21b0e8352f568d8d0c342ec
+[04ded9b]: https://github.com/afonsodemori/snippetbox/commit/04ded9b9eb8e790efb9989c8cabff445c960ddc5
