@@ -45,12 +45,12 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Panic recovery - [9ac90fe]
    - [x] Composable middleware chains - [04ded9b]
 7. Processing forms
-   - [ ] Setting up an HTML form
-   - [ ] Parsing form data
-   - [ ] Validating form data
-   - [ ] Displaying errors and repopulating fields
-   - [ ] Creating validation helpers
-   - [ ] Automatic form parsing
+   - [x] Setting up an HTML form - [6aee7f4]
+   - [x] Parsing form data - [d1f08fa]
+   - [x] Validating form data - [8291b7c]
+   - [x] Displaying errors and repopulating fields - [310dbd8]
+   - [x] Creating validation helpers - [1a7f28f]
+   - [x] Automatic form parsing - [a1ccf7c]
 8. Stateful HTTP
    - [ ] Choosing a session manager
    - [ ] Setting up the session manager
@@ -127,3 +127,9 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [a347b03]: https://github.com/afonsodemori/snippetbox/commit/a347b03442e48a6ca65dbee038b961392f930505
 [9ac90fe]: https://github.com/afonsodemori/snippetbox/commit/9ac90feffb63e434e21b0e8352f568d8d0c342ec
 [04ded9b]: https://github.com/afonsodemori/snippetbox/commit/04ded9b9eb8e790efb9989c8cabff445c960ddc5
+[6aee7f4]: https://github.com/afonsodemori/snippetbox/commit/6aee7f45f12709f91aafacf99a37c460230e604a
+[d1f08fa]: https://github.com/afonsodemori/snippetbox/commit/d1f08fa94b27cc28a0cc3673315189308aab419e
+[8291b7c]: https://github.com/afonsodemori/snippetbox/commit/8291b7c182ff1f7a3c9c47c0ce69844f4bba741f
+[310dbd8]: https://github.com/afonsodemori/snippetbox/commit/310dbd86926813f33a0b3de95bbc5a4b98a0e7cc
+[1a7f28f]: https://github.com/afonsodemori/snippetbox/commit/1a7f28ff9ec3b721d794c568e4000d44398586ad
+[a1ccf7c]: https://github.com/afonsodemori/snippetbox/commit/a1ccf7c79e2ab0d4543e599b2223e37b29e0ad5f
