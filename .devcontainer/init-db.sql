@@ -64,3 +64,13 @@ VALUES (
             INTERVAL 7 DAY
         )
     );
+
+-- sessions, introduced in chapter 8
+
+CREATE TABLE sessions (
+    token CHAR(43) PRIMARY KEY,
+    data BLOB NOT NULL,
+    expiry TIMESTAMP(6) NOT NULL
+);
+
+CREATE INDEX sessions_expiry_idx ON sessions (expiry);
