@@ -52,9 +52,9 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Creating validation helpers - [1a7f28f]
    - [x] Automatic form parsing - [a1ccf7c]
 8. Stateful HTTP
-   - [ ] Choosing a session manager
-   - [ ] Setting up the session manager
-   - [ ] Working with session data
+   - [x] Choosing a session manager - [3e2e33d]
+   - [x] Setting up the session manager - [3f68ad9]
+   - [x] Working with session data - [3a56e7e]
 9. Server and security improvements
    - [ ] The http.Server struct
    - [ ] The server error log
@@ -133,3 +133,6 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [310dbd8]: https://github.com/afonsodemori/snippetbox/commit/310dbd86926813f33a0b3de95bbc5a4b98a0e7cc
 [1a7f28f]: https://github.com/afonsodemori/snippetbox/commit/1a7f28ff9ec3b721d794c568e4000d44398586ad
 [a1ccf7c]: https://github.com/afonsodemori/snippetbox/commit/a1ccf7c79e2ab0d4543e599b2223e37b29e0ad5f
+[3e2e33d]: https://github.com/afonsodemori/snippetbox/commit/3e2e33dd3bd80ce3febd1469eea3346e81c62231
+[3f68ad9]: https://github.com/afonsodemori/snippetbox/commit/3f68ad993591f37b843c04779f7a485037b8692d
+[3a56e7e]: https://github.com/afonsodemori/snippetbox/commit/3a56e7ef714d93e097cc92c3a1ed30d1bfda8656
