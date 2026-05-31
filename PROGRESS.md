@@ -56,12 +56,12 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Setting up the session manager - [3f68ad9]
    - [x] Working with session data - [3a56e7e]
 9. Server and security improvements
-   - [ ] The http.Server struct
-   - [ ] The server error log
-   - [ ] Generating a self-signed TLS certificate
-   - [ ] Running an HTTPS server
-   - [ ] Configuring HTTPS settings
-   - [ ] Connection timeouts
+   - [x] The http.Server struct - [aeb991b]
+   - [x] The server error log - [0c1a69c]
+   - [x] Generating a self-signed TLS certificate - [3c2ee35]
+   - [x] Running an HTTPS server - [4112667]
+   - [x] Configuring HTTPS settings - [f224490]
+   - [x] Connection timeouts - [d442270]
 10. User authentication
     - [ ] Routes setup
     - [ ] Creating a users model
@@ -136,3 +136,9 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [3e2e33d]: https://github.com/afonsodemori/snippetbox/commit/3e2e33dd3bd80ce3febd1469eea3346e81c62231
 [3f68ad9]: https://github.com/afonsodemori/snippetbox/commit/3f68ad993591f37b843c04779f7a485037b8692d
 [3a56e7e]: https://github.com/afonsodemori/snippetbox/commit/3a56e7ef714d93e097cc92c3a1ed30d1bfda8656
+[aeb991b]: https://github.com/afonsodemori/snippetbox/commit/aeb991b74e479b939f8638917df54c6783b31bd8
+[0c1a69c]: https://github.com/afonsodemori/snippetbox/commit/0c1a69c3c17129c1620e27bbb8d23909f74c0fbc
+[3c2ee35]: https://github.com/afonsodemori/snippetbox/commit/3c2ee354dc6eb4bfe142239f62a832b2e1a7569c
+[4112667]: https://github.com/afonsodemori/snippetbox/commit/4112667d19cc70bdceab644c017feb29fe70574f
+[f224490]: https://github.com/afonsodemori/snippetbox/commit/f2244905d005cc557f9c27c0a57c247e97d84e25
+[d442270]: https://github.com/afonsodemori/snippetbox/commit/d442270faba861d554c0dc6b034a25bd96208182
