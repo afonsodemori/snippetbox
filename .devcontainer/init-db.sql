@@ -1,6 +1,6 @@
 USE db;
 
--- structure
+-- Chapter 4.1. Setting up MySQL
 
 CREATE TABLE snippets (
     id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -11,8 +11,6 @@ CREATE TABLE snippets (
 );
 
 CREATE INDEX idx_snippets_created ON snippets (created);
-
--- dummy data
 
 INSERT INTO
     snippets (
@@ -65,7 +63,7 @@ VALUES (
         )
     );
 
--- sessions, introduced in chapter 8
+-- Chapter 8.2. Setting up the session manager
 
 CREATE TABLE sessions (
     token CHAR(43) PRIMARY KEY,
@@ -74,3 +72,15 @@ CREATE TABLE sessions (
 );
 
 CREATE INDEX sessions_expiry_idx ON sessions (expiry);
+
+-- Chapter 10.2. Creating a users model
+
+CREATE TABLE users (
+    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    hashed_password CHAR(60) NOT NULL,
+    created DATETIME NOT NULL
+);
+
+ALTER TABLE users ADD CONSTRAINT users_uc_email UNIQUE (email);
