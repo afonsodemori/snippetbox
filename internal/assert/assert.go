@@ -13,11 +13,27 @@ func Equal[T any](t *testing.T, got, want T) {
 	}
 }
 
+func NotEqual[T comparable](t *testing.T, got, want T) {
+	t.Helper()
+
+	if isEqual(got, want) {
+		t.Errorf("got: %v; expected values to be different", got)
+	}
+}
+
 func True(t *testing.T, got bool) {
 	t.Helper()
 
 	if !got {
-		t.Errorf("got: %t; want: true", got)
+		t.Error("got: false; want: true")
+	}
+}
+
+func False(t *testing.T, got bool) {
+	t.Helper()
+
+	if got {
+		t.Error("got: true; want: false")
 	}
 }
 
@@ -26,6 +42,14 @@ func Nil(t *testing.T, got any) {
 
 	if !isNil(got) {
 		t.Errorf("got: %v; want: nil", got)
+	}
+}
+
+func NotNil(t *testing.T, got any) {
+	t.Helper()
+
+	if isNil(got) {
+		t.Errorf("got: nil; want: non-nil")
 	}
 }
 
