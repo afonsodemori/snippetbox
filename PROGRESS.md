@@ -63,13 +63,13 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
    - [x] Configuring HTTPS settings - [f224490]
    - [x] Connection timeouts - [d442270]
 10. User authentication
-    - [ ] Routes setup
-    - [ ] Creating a users model
-    - [ ] User signup and password encryption
-    - [ ] User login
-    - [ ] User logout
-    - [ ] User authorization
-    - [ ] CSRF protection
+    - [x] Routes setup - [1c9ffc5]
+    - [x] Creating a users model - [195a6c9]
+    - [x] User signup and password encryption - [ad2a2ee]
+    - [x] User login - [1ab0aca]
+    - [x] User logout - [cc6ed70]
+    - [x] User authorization - [b7917e5]
+    - [x] CSRF protection - [ddbc5d4]
 11. Using request context
     - [ ] How request context works
     - [ ] Request context for authentication/authorization
@@ -142,3 +142,10 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [4112667]: https://github.com/afonsodemori/snippetbox/commit/4112667d19cc70bdceab644c017feb29fe70574f
 [f224490]: https://github.com/afonsodemori/snippetbox/commit/f2244905d005cc557f9c27c0a57c247e97d84e25
 [d442270]: https://github.com/afonsodemori/snippetbox/commit/d442270faba861d554c0dc6b034a25bd96208182
+[1c9ffc5]: https://github.com/afonsodemori/snippetbox/commit/1c9ffc5f08ea0497cf955dd90c8313a739fe8a76
+[195a6c9]: https://github.com/afonsodemori/snippetbox/commit/195a6c9c8b29cd54ea9300fe2e89cdacb6464a93
+[ad2a2ee]: https://github.com/afonsodemori/snippetbox/commit/ad2a2ee210704da8fdab4df6cca39d3fb9730cee
+[1ab0aca]: https://github.com/afonsodemori/snippetbox/commit/1ab0aca1077f2afccdd90d82e2d475c51fc57738
+[cc6ed70]: https://github.com/afonsodemori/snippetbox/commit/cc6ed7090101e2283d48f094ae3fee5f00d948e6
+[b7917e5]: https://github.com/afonsodemori/snippetbox/commit/b7917e5edb8eec8548d64b69179c5d0b59c6c10f
+[ddbc5d4]: https://github.com/afonsodemori/snippetbox/commit/ddbc5d4dc0eba9843bf4f776085ec73e0932fd8c
