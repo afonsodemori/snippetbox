@@ -71,8 +71,8 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
     - [x] User authorization - [b7917e5]
     - [x] CSRF protection - [ddbc5d4]
 11. Using request context
-    - [ ] How request context works
-    - [ ] Request context for authentication/authorization
+    - [x] How request context works - <small>`theory`</small>
+    - [x] Request context for authentication/authorization - [27daeaf]
 12. File embedding
     - [ ] Embedding static files
     - [ ] Embedding HTML templates
@@ -149,3 +149,4 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [cc6ed70]: https://github.com/afonsodemori/snippetbox/commit/cc6ed7090101e2283d48f094ae3fee5f00d948e6
 [b7917e5]: https://github.com/afonsodemori/snippetbox/commit/b7917e5edb8eec8548d64b69179c5d0b59c6c10f
 [ddbc5d4]: https://github.com/afonsodemori/snippetbox/commit/ddbc5d4dc0eba9843bf4f776085ec73e0932fd8c
+[27daeaf]: https://github.com/afonsodemori/snippetbox/commit/27daeaf4794b6ecb38e2f3a959acf91b937746ca
