@@ -74,8 +74,8 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
     - [x] How request context works - <small>`theory`</small>
     - [x] Request context for authentication/authorization - [27daeaf]
 12. File embedding
-    - [ ] Embedding static files
-    - [ ] Embedding HTML templates
+    - [x] Embedding static files - [f6848b5]
+    - [x] Embedding HTML templates - [6139ba7]
 13. Testing
     - [ ] Unit testing and sub-tests
     - [ ] Assertion helpers
@@ -150,3 +150,5 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [b7917e5]: https://github.com/afonsodemori/snippetbox/commit/b7917e5edb8eec8548d64b69179c5d0b59c6c10f
 [ddbc5d4]: https://github.com/afonsodemori/snippetbox/commit/ddbc5d4dc0eba9843bf4f776085ec73e0932fd8c
 [27daeaf]: https://github.com/afonsodemori/snippetbox/commit/27daeaf4794b6ecb38e2f3a959acf91b937746ca
+[f6848b5]: https://github.com/afonsodemori/snippetbox/commit/f6848b5660fe0ce06e725aa70778cceb312bc508
+[6139ba7]: https://github.com/afonsodemori/snippetbox/commit/6139ba70ddb28ebbe5c2f91b78d4f14af2e9984b
