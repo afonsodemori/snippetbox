@@ -77,15 +77,15 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
     - [x] Embedding static files - [f6848b5]
     - [x] Embedding HTML templates - [6139ba7]
 13. Testing
-    - [ ] Unit testing and sub-tests
-    - [ ] Assertion helpers
-    - [ ] Testing HTTP handlers and middleware
-    - [ ] End-to-end testing
-    - [ ] Customizing how tests run
-    - [ ] Mocking dependencies
-    - [ ] Testing HTML forms
-    - [ ] Integration testing
-    - [ ] Profiling test coverage
+    - [x] Unit testing and sub-tests - [208643b]
+    - [x] Assertion helpers - [e64c8a8]
+    - [x] Testing HTTP handlers and middleware - [e8099db]
+    - [x] End-to-end testing - [686232c]
+    - [x] Customizing how tests run - <small>`theory`</small>
+    - [x] Mocking dependencies - [3b28076]
+    - [x] Testing HTML forms - [16b932f]
+    - [x] Integration testing - [5a55461]
+    - [x] Profiling test coverage - <small>`theory`</small>
 14. Conclusion
 15. Further reading and useful links
 16. Guided exercises
@@ -152,3 +152,10 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [27daeaf]: https://github.com/afonsodemori/snippetbox/commit/27daeaf4794b6ecb38e2f3a959acf91b937746ca
 [f6848b5]: https://github.com/afonsodemori/snippetbox/commit/f6848b5660fe0ce06e725aa70778cceb312bc508
 [6139ba7]: https://github.com/afonsodemori/snippetbox/commit/6139ba70ddb28ebbe5c2f91b78d4f14af2e9984b
+[208643b]: https://github.com/afonsodemori/snippetbox/commit/208643bb8165bd18274a8d65198a8cde7ca19336
+[e64c8a8]: https://github.com/afonsodemori/snippetbox/commit/e64c8a89474e7280c9c5950f471bddcf6246518d
+[e8099db]: https://github.com/afonsodemori/snippetbox/commit/e8099dbe5f9a172dad372889b587d1254344c20e
+[686232c]: https://github.com/afonsodemori/snippetbox/commit/686232c958a1a4ddec3720149b700f6818b04d3f
+[3b28076]: https://github.com/afonsodemori/snippetbox/commit/3b28076ef96be46faa15470ba9ccf7f8cf92d5b2
+[16b932f]: https://github.com/afonsodemori/snippetbox/commit/16b932f4b303b4f7440d6c840996b92cd210c881
+[5a55461]: https://github.com/afonsodemori/snippetbox/commit/5a55461eb3685da94e563b90c514b11eaf01d2ee
