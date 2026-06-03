@@ -84,3 +84,21 @@ CREATE TABLE users (
 );
 
 ALTER TABLE users ADD CONSTRAINT users_uc_email UNIQUE (email);
+
+-- Chapter 13.8. Integration testing
+
+CREATE DATABASE db_test CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE USER 'user_test' @'%';
+
+GRANT CREATE,
+DROP,
+ALTER,
+INDEX,
+SELECT,
+INSERT
+,
+UPDATE,
+DELETE ON db_test.* TO 'user_test' @'%';
+
+ALTER USER 'user_test' @'%' IDENTIFIED BY 'testpass';
