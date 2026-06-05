@@ -1,0 +1,23 @@
+{{ define "title" }}Account{{ end }}
+
+{{ define "main" }}
+<div id="fns">
+	<h1>Your Account</h1>
+	{{ with .User }}
+		<table>
+			<tr>
+				<th>Name</th>
+				<td>{{ .Name }}</td>
+			</tr>
+			<tr>
+				<th>Email</th>
+				<td>{{ .Email }}</td>
+			</tr>
+			<tr>
+				<th>Joined</th>
+				<td>{{ .Created | humanDate }}</td>
+			</tr>
+		</table>
+	{{ end }}
+</div>
+{{ end }}
