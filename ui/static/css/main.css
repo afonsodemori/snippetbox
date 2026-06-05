@@ -398,3 +398,38 @@ footer {
   color: #6a6c6f;
   text-align: center;
 }
+
+/** Personalized style, out of tutorial **/
+
+#fns a {
+  color: #3498db;
+}
+
+#fns h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.6rem;
+}
+
+#fns h2 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  top: initial;
+}
+
+#fns p {
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+
+#fns ul {
+  margin: 1rem 0;
+  padding: 0 0 0 2rem;
+}
+
+#fns code {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #c0392b;
+}

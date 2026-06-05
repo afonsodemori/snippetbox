@@ -1,0 +1,26 @@
+{{ define "title" }}About{{ end }}
+
+{{ define "main" }}
+<div id="fns">
+	<h1>About</h1>
+	<p>This is a full-stack web application for creating and sharing text snippets, built with Go using only the standard library — no frameworks.</p>
+	<p>This is a learning project built section-by-section through <a href="https://lets-go.alexedwards.net/" target="_blank"><em>Let's Go</em> by Alex Edwards</a>. Each commit maps 1:1 to a book section.</p>
+	<p>Source code is available on GitHub at <a href="https://github.com/afonsodemori/snippetbox" target="_blank">afonsodemori/snippetbox</a>.</p>
+
+	<h2>Tech Stack</h2>
+	<ul>
+		<li><strong>Go</strong> — HTTP server, routing, templating, and middleware via <code>net/http</code> and <code>html/template</code></li>
+		<li><strong>MySQL</strong> — relational data storage with a hand-rolled database model</li>
+		<li><strong>HTML/CSS</strong> — server-rendered templates with a custom inheritance layout system</li>
+		<li><strong>TLS</strong> — HTTPS with self-signed certificates</li>
+	</ul>
+
+	<h2>Features</h2>
+	<ul>
+		<li>Create, view, and share snippets with expiry dates</li>
+		<li>User accounts with signup, login, and session management</li>
+		<li>CSRF protection and secure cookie handling</li>
+		<li>Structured logging, panic recovery middleware, and centralized error handling</li>
+	</ul>
+</div>
+{{ end }}
