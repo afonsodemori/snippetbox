@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-family: 'Ubuntu Mono', monospace;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 header,
-nav,
+.nav-header nav,
 main,
 footer {
   padding: 2px calc((100% - 800px) / 2) 0;
@@ -67,7 +67,7 @@ a:hover {
 
 textarea,
 input:not([type='submit']) {
-  font-size: 18px;
+  font-size: 1rem;
   font-family: 'Ubuntu Mono', monospace;
 }
 
@@ -162,7 +162,7 @@ header a {
   text-decoration: none;
 }
 
-nav {
+.nav-header nav {
   border-bottom: 1px solid #e4e5e7;
   padding-top: 17px;
   padding-bottom: 15px;
@@ -171,40 +171,40 @@ nav {
   color: #6a6c6f;
 }
 
-nav a {
+.nav-header nav a {
   margin-right: 1.5em;
   display: inline-block;
 }
 
-nav form {
+.nav-header nav form {
   display: inline-block;
   margin-left: 1.5em;
 }
 
-nav div {
+.nav-header nav div {
   width: 50%;
   float: left;
 }
 
-nav div:last-child {
+.nav-header nav div:last-child {
   text-align: right;
 }
 
-nav div:last-child a {
+.nav-header nav div:last-child a {
   margin-left: 1.5em;
   margin-right: 0;
 }
 
-nav a.live {
+.nav-header nav a.live {
   color: #34495e;
   cursor: default;
 }
 
-nav a.live:hover {
+.nav-header nav a.live:hover {
   text-decoration: none;
 }
 
-nav a.live:after {
+.nav-header nav a.live:after {
   content: '';
   display: block;
   position: relative;
@@ -229,6 +229,7 @@ input[type='submit'] {
   display: inline-block;
   margin-top: 18px;
   font-weight: 700;
+  font-size: inherit;
 }
 
 a.button:hover,
@@ -291,7 +292,8 @@ textarea {
   height: 266px;
 }
 
-button {
+.nav-header button {
+  font-size: inherit;
   background: none;
   padding: 0;
   border: none;
@@ -299,7 +301,7 @@ button {
   text-decoration: none;
 }
 
-button:hover {
+.nav-header button:hover {
   color: #4eb722;
   text-decoration: underline;
   cursor: pointer;
@@ -312,6 +314,7 @@ button:hover {
 }
 
 .snippet pre {
+  text-wrap: auto;
   padding: 18px;
   border-top: 1px solid #e4e5e7;
   border-bottom: 1px solid #e4e5e7;
@@ -401,6 +404,10 @@ footer {
 
 /** Personalized style, out of tutorial **/
 
+html {
+  font-size: 18px;
+}
+
 #fns a {
   color: #3498db;
 }
@@ -432,4 +439,119 @@ footer {
   border-radius: 0.2rem;
   background-color: rgba(0, 0, 0, 0.05);
   color: #c0392b;
+}
+
+/* Hidden checkbox drives the state */
+.nav-overlay,
+.nav-toggle,
+.hamburger {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 15px;
+  }
+
+  main {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .nav-header nav {
+    display: none;
+  }
+
+  .nav-overlay,
+  .nav-overlay div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 42px;
+    left: 10px;
+    z-index: 1001;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #222;
+    border-radius: 2px;
+    transition:
+      transform 0.3s,
+      opacity 0.3s,
+      background 0.3s;
+  }
+
+  .nav-overlay nav {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    background: rgba(18, 18, 18, 0.95);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s,
+      visibility 0.3s;
+  }
+
+  .nav-overlay nav div:first-of-type {
+    min-width: 80%;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1.5rem;
+  }
+
+  .nav-overlay nav a,
+  .nav-overlay nav button {
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+
+  .nav-overlay nav a:hover {
+    opacity: 1;
+  }
+
+  .nav-overlay nav button {
+    border: none;
+    background: none;
+  }
+
+  .nav-overlay nav button:hover {
+    cursor: pointer;
+  }
+
+  .nav-toggle:checked ~ .nav-overlay nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Animate icon into an X */
+  .nav-toggle:checked + .hamburger span {
+    background: #fff;
+  }
+  .nav-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .nav-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
