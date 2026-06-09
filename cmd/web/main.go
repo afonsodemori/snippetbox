@@ -28,8 +28,14 @@ type application struct {
 }
 
 func main() {
+	// Keep compatibility between containerized and book versions
+	dsnValue, exists := os.LookupEnv("DSN")
+	if !exists || dsnValue == "" {
+		dsnValue = "user:pass@tcp(db:3306)/db?parseTime=true"
+	}
+
 	addr := flag.String("addr", ":4000", "HTTP network address")
-	dsn := flag.String("dsn", "user:pass@tcp(db:3306)/db?parseTime=true", "MySQL data source name")
+	dsn := flag.String("dsn", dsnValue, "MySQL data source name")
 	flag.Parse()
 
 	// logger := slog.New(slog.NewTextHandler(os.Stdout, nil))
@@ -80,7 +86,9 @@ func main() {
 
 	logger.Info("starting server", slog.String("addr", *addr))
 
-	err = srv.ListenAndServeTLS("./tls/cert.pem", "./tls/key.pem")
+	// Removed before deploy. Running in docker, behind nginx proxy.
+	// err = srv.ListenAndServeTLS("./tls/cert.pem", "./tls/key.pem")
+	err = srv.ListenAndServe()
 	logger.Error(err.Error())
 	os.Exit(1)
 }

@@ -1,6 +1,6 @@
 module afonso.dev/snippetbox
 
-go 1.26.1
+go 1.26.4
 
 require (
 	github.com/alexedwards/scs/mysqlstore v0.0.0-20251002162104-209de6e426de

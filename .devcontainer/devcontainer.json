@@ -15,6 +15,10 @@
     "source=${localWorkspaceFolder},target=/snippetbox,type=bind,consistency=cached"
   ],
 
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:3": { "moby": false }
+  },
+
   "customizations": {
     "vscode": {
       "extensions": [
