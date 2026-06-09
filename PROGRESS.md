@@ -89,11 +89,11 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 14. Conclusion
 15. Further reading and useful links
 16. Guided exercises
-    - [ ] Add an 'About' page to the application
+    - [x] Add an 'About' page to the application - [c80263a]
     - [ ] Add a debug mode
     - [ ] Test the snippetCreate handler
-    - [ ] Add an 'Account' page to the application
-    - [ ] Redirect user appropriately after login
+    - [x] Add an 'Account' page to the application - [ee895c1]
+    - [x] Redirect user appropriately after login - [5ee4ea0]
     - [ ] Implement a 'Change Password' feature
 
 [4f4de3b]: https://github.com/afonsodemori/snippetbox/commit/4f4de3b1c43bffff43bb315a07c860e2283ad1aa
@@ -159,3 +159,6 @@ Track of my journey through [_Let's Go_](https://lets-go.alexedwards.net/). Comp
 [3b28076]: https://github.com/afonsodemori/snippetbox/commit/3b28076ef96be46faa15470ba9ccf7f8cf92d5b2
 [16b932f]: https://github.com/afonsodemori/snippetbox/commit/16b932f4b303b4f7440d6c840996b92cd210c881
 [5a55461]: https://github.com/afonsodemori/snippetbox/commit/5a55461eb3685da94e563b90c514b11eaf01d2ee
+[c80263a]: https://github.com/afonsodemori/snippetbox/commit/c80263a9a7901b6c2e1171e39621c5715550d655
+[ee895c1]: https://github.com/afonsodemori/snippetbox/commit/ee895c1c2d11fec3b2beec6887c67bff82c81dcb
+[5ee4ea0]: https://github.com/afonsodemori/snippetbox/commit/5ee4ea0acb88084b8b5bbb23f0000e87fca3f687

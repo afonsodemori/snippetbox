@@ -2,17 +2,18 @@
 
 A full-stack web application for creating and sharing text snippets, built with Go using only the standard library — no frameworks.
 
-This is a learning project built section-by-section through [_Let's Go_ by Alex Edwards](https://lets-go.alexedwards.net/). Each commit maps 1:1 to a book section.
+**Live demo:** https://snippetbox.afonso.dev
 
-> \[!NOTE]
-> This repository is actively under development. I am currently working through the book, and features are being added incrementally. See [PROGRESS.md](PROGRESS.md) for the current completion status and full chapter map.
+Built section-by-section through [_Let's Go_ by Alex Edwards](https://lets-go.alexedwards.net/), then containerized and deployed to my own infrastructure.
+
+![Snippetbox screenshot](docs/screenshot.png)
 
 ## Tech Stack
 
 - **Go** — HTTP server, routing, templating, and middleware via `net/http` and `html/template`
 - **MySQL** — relational data storage with a hand-rolled database model
 - **HTML/CSS** — server-rendered templates with a custom inheritance layout system
-- **TLS** — HTTPS with self-signed certificates
+- **Docker · nginx · Cloudflare** — see [Deployment](#deployment)
 
 ## Features
 
@@ -21,9 +22,17 @@ This is a learning project built section-by-section through [_Let's Go_ by Alex 
 - CSRF protection and secure cookie handling
 - Structured logging, panic recovery middleware, and centralized error handling
 
+## Deployment
+
+Runs in production as a Docker container on a VPS:
+
+- Reverse-proxied through **nginx**
+- **TLS** via Let's Encrypt at the origin, fronted by **Cloudflare**
+- Local development uses self-signed certificates (per the book)
+
 ## Getting Started
 
-To run the application locally at its current stage of development:
+Run locally:
 
 ```bash
 git clone https://github.com/afonsodemori/snippetbox.git
